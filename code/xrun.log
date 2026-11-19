@@ -1,0 +1,203 @@
+xrun(64): 20.09-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s009: Started on Nov 19, 2026 at 16:08:16 IST
+irun
+	-access +rwc
+	-f file.f
+		pkg.sv
+		bit_enable.sv
+		tx_holding_reg.sv
+		piso.sv
+		bit_stuffer.sv
+		nrzi_encoder.sv
+		tx_data_line_state_converter.sv
+		eop.sv
+		tx_phy_mux.sv
+		phy_tx_top.sv
+		line_state_detector.sv
+		bus_reset.sv
+		rx_ctrl.sv
+		sync_eop_detector.sv
+		nrzi_decoder.sv
+		bit_unstuffer.sv
+		sipo.sv
+		phy_rx_top.sv
+		edge_err_detection.sv
+		FSM.sv
+		loop_filter.sv
+		oversampler.sv
+		phase_acc.sv
+		sampler.sv
+		sync_deglitch.sv
+		cdr_top.sv
+		phy_top.sv
+	tb_top.sv
+xrun: *W,NCEXDEP: Executable (irun) is deprecated. Use (xrun) instead.
+file: bit_enable.sv
+	module worklib.usb_speed_tick:sv
+		errors: 0, warnings: 0
+file: tx_holding_reg.sv
+	module worklib.usb2_tx_fifo:sv
+		errors: 0, warnings: 0
+file: piso.sv
+	module worklib.usb_piso:sv
+		errors: 0, warnings: 0
+file: bit_stuffer.sv
+	module worklib.usb2_bit_stuffer:sv
+		errors: 0, warnings: 0
+file: nrzi_encoder.sv
+	module worklib.usb_nrzi_encoder:sv
+		errors: 0, warnings: 0
+file: tx_data_line_state_converter.sv
+	module worklib.tx_line_state_converter:sv
+		errors: 0, warnings: 0
+file: eop.sv
+	module worklib.usb_eop_gen:sv
+		errors: 0, warnings: 0
+file: tx_phy_mux.sv
+	module worklib.usb_tx_line_mux:sv
+		errors: 0, warnings: 0
+file: phy_tx_top.sv
+	module worklib.phy_tx_top:sv
+		errors: 0, warnings: 0
+file: line_state_detector.sv
+	module worklib.usb2_rx_line_state_detector:sv
+		errors: 0, warnings: 0
+file: bus_reset.sv
+	module worklib.usb2_rx_reset_detect:sv
+		errors: 0, warnings: 0
+file: rx_ctrl.sv
+	module worklib.usb2_rx_ctrl:sv
+		errors: 0, warnings: 0
+file: sync_eop_detector.sv
+	module worklib.usb2_rx_sync_eop_detector:sv
+		errors: 0, warnings: 0
+file: nrzi_decoder.sv
+	module worklib.usb2_nrzi_decoder:sv
+		errors: 0, warnings: 0
+file: bit_unstuffer.sv
+	module worklib.usb2_bit_unstuffer:sv
+		errors: 0, warnings: 0
+file: sipo.sv
+	module worklib.usb_sipo:sv
+		errors: 0, warnings: 0
+file: phy_rx_top.sv
+	module worklib.phy_rx_top:sv
+		errors: 0, warnings: 0
+file: edge_err_detection.sv
+	module worklib.usb2_cdr_error_detection:sv
+		errors: 0, warnings: 0
+file: FSM.sv
+	module worklib.usb2_cdr_lock_fsm:sv
+		errors: 0, warnings: 0
+file: loop_filter.sv
+	module worklib.usb2_cdr_loop_filter:sv
+		errors: 0, warnings: 0
+file: oversampler.sv
+	module worklib.usb2_cdr_oversampler:sv
+		errors: 0, warnings: 0
+file: phase_acc.sv
+	module worklib.usb2_cdr_phase_acc:sv
+		errors: 0, warnings: 0
+file: sampler.sv
+	module worklib.usb2_cdr_sampler:sv
+		errors: 0, warnings: 0
+file: sync_deglitch.sv
+	module worklib.usb2_cdr_sync_deglitch:sv
+		errors: 0, warnings: 0
+file: cdr_top.sv
+	module worklib.usb2_cdr_top:sv
+		errors: 0, warnings: 0
+file: phy_top.sv
+	module worklib.phy_top:sv
+		errors: 0, warnings: 0
+file: tb_top.sv
+	module worklib.tb_phy_tx_top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		usb_phy_pkg
+		$unit_0x4cbecbdf
+		tb_phy_tx_top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.usb2_cdr_lock_fsm:sv <0x461f3f84>
+			streams:  17, words:  7516
+		worklib.usb2_cdr_sampler:sv <0x249c97ee>
+			streams:  11, words:  3523
+		worklib.usb2_cdr_phase_acc:sv <0x7adc5af7>
+			streams:  11, words:  3324
+		worklib.usb2_cdr_loop_filter:sv <0x6947fe77>
+			streams:  18, words:  6585
+		worklib.usb2_cdr_error_detection:sv <0x613a4f7a>
+			streams:  10, words:  2658
+		worklib.usb2_cdr_oversampler:sv <0x3d04414c>
+			streams:   3, words:  2172
+		worklib.usb2_cdr_sync_deglitch:sv <0x3bd8e07c>
+			streams:  10, words:  2560
+		worklib.usb2_cdr_top:sv <0x5ad18e24>
+			streams:  11, words:  3014
+		worklib.usb_sipo:sv <0x5fdf1c86>
+			streams:   8, words:  2755
+		worklib.usb2_bit_unstuffer:sv <0x6516c9a4>
+			streams:   7, words:  2820
+		worklib.usb2_nrzi_decoder:sv <0x5fbf6051>
+			streams:   6, words:  1930
+		worklib.usb2_rx_ctrl:sv <0x2fc951a7>
+			streams:  45, words: 20741
+		worklib.usb2_rx_sync_eop_detector:sv <0x327893dd>
+			streams:  17, words: 11373
+		worklib.usb2_rx_reset_detect:sv <0x73d090bd>
+			streams:   4, words:  1227
+		worklib.usb2_rx_line_state_detector:sv <0x7e1e1fa0>
+			streams:   1, words:  1673
+		worklib.phy_rx_top:sv <0x5c6e85f4>
+			streams:  61, words: 15923
+		worklib.usb_tx_line_mux:sv <0x7634c9b9>
+			streams:   1, words:   985
+		worklib.usb_eop_gen:sv <0x2d1d0571>
+			streams:   9, words:  5337
+		worklib.tx_line_state_converter:sv <0x34e726ed>
+			streams:   3, words:   790
+		worklib.usb_nrzi_encoder:sv <0x7deb2fd6>
+			streams:   6, words:  2073
+		worklib.usb2_bit_stuffer:sv <0x7f13d155>
+			streams:  11, words:  3506
+		worklib.usb_piso:sv <0x3f56a142>
+			streams:  17, words:  9970
+		worklib.usb2_tx_fifo:sv <0x0f5b5429>
+			streams:  12, words:  4726
+		worklib.usb_speed_tick:sv <0x04744534>
+			streams:   5, words:  1486
+		worklib.phy_tx_top:sv <0x321999fa>
+			streams:  56, words: 15663
+		worklib.phy_top:sv <0x5ea67861>
+			streams:  24, words:  8571
+		worklib.tb_phy_tx_top:sv <0x72694866>
+			streams:  32, words: 15648
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		               Instances  Unique
+		Modules:              27      27
+		Verilog packages:      1       1
+		Registers:           322     322
+		Scalar wires:        338       -
+		Vectored wires:       79       -
+		Always blocks:        35      35
+		Initial blocks:        3       3
+		Cont. assignments:   104     124
+		Pseudo assignments:  169     169
+		Compilation units:     1       1
+	Writing initial simulation snapshot: worklib.tb_phy_tx_top:sv
+Loading snapshot worklib.tb_phy_tx_top:sv .................... Done
+SVSEED default: 1
+xmsim: *W,RNDXCELON: A newer version of the SystemVerilog constraint solver is being used which has better support for array-solving, new solve-order mechanism, and seed stability enhancements..
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation complete via $finish(1) at time 1000032 NS + 0
+./tb_top.sv:134 		#1000000 $finish();
+xcelium> exit
+TOOL:	xrun(64)	20.09-s009: Exiting on Nov 19, 2026 at 16:08:19 IST  (total: 00:00:03)

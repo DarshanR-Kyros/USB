@@ -1,0 +1,32 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/home/sgeuser77/code/pkg.sv
+/home/sgeuser77/code/bit_enable.sv
+/home/sgeuser77/code/tx_holding_reg.sv
+/home/sgeuser77/code/piso.sv
+/home/sgeuser77/code/bit_stuffer.sv
+/home/sgeuser77/code/nrzi_encoder.sv
+/home/sgeuser77/code/tx_data_line_state_converter.sv
+/home/sgeuser77/code/eop.sv
+/home/sgeuser77/code/tx_phy_mux.sv
+/home/sgeuser77/code/phy_tx_top.sv
+/home/sgeuser77/code/line_state_detector.sv
+/home/sgeuser77/code/bus_reset.sv
+/home/sgeuser77/code/rx_ctrl.sv
+/home/sgeuser77/code/sync_eop_detector.sv
+/home/sgeuser77/code/nrzi_decoder.sv
+/home/sgeuser77/code/bit_unstuffer.sv
+/home/sgeuser77/code/sipo.sv
+/home/sgeuser77/code/phy_rx_top.sv
+/home/sgeuser77/code/edge_err_detection.sv
+/home/sgeuser77/code/FSM.sv
+/home/sgeuser77/code/loop_filter.sv
+/home/sgeuser77/code/oversampler.sv
+/home/sgeuser77/code/phase_acc.sv
+/home/sgeuser77/code/sampler.sv
+/home/sgeuser77/code/sync_deglitch.sv
+/home/sgeuser77/code/cdr_top.sv
+/home/sgeuser77/code/phy_top.sv
+/home/sgeuser77/code/tb_top.sv
